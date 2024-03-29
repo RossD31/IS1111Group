@@ -8,12 +8,14 @@ import phonenumbers
 
 
 
+
 ctk.set_appearance_mode("light")
 
 class GUI_badnumber():
     
-    def __init__(self,root_tk):
-        self.root_tk=root_tk
+    def __init__(self, root_tk, delivery_collection):
+        self.root_tk = root_tk
+        self.delivery_collection = delivery_collection
         self.root_tk.geometry("700x700")
         self.root_tk.title("CustomTkinter Test")
         placeholder_font=("Verdana",16)
